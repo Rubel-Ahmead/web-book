@@ -1,0 +1,29 @@
+<%- include ("layout/header") %>
+
+<div class="container " style="width: 80%;">
+
+    <form action="/contack/registration" method="POST" target="_self">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" aria-required="false">Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1"  name="name">
+         
+        </div>
+        <div class="mb-3">
+          <label for="year" class="form-label" aria-required="true">Years</label>
+          <input type="number" class="form-control" id="year" name="year">
+        </div>
+
+        <div class="mb-3 ">
+             <label class="form-label" for="exampleCheck1">Father Name</label>
+          <input type="text" class="form-control" id="exampleCheck1" name="faname">
+         
+        </div>
+        <div class="mb-3 ">
+             <label class="form-label" for="examp">Mother Name</label>
+          <input type="text" class="form-control" id="examp" name="maname">
+         
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+<%- include ("layout/footer") %>
